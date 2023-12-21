@@ -14,7 +14,7 @@ struct ListView: View {
             List {
                 Section(header: Text("Recodings")) {
                     ForEach(Array(zip(self.audios.indices, self.audios)),id:\.1) { index, i in
-                        NavigationLink(destination: EmptyView()) {
+                        NavigationLink(destination: PlayerView(uri: i, audios: audios, index: index)) {
                             Text((UserDefaults.standard.string(forKey: i.relativeString)!)
                             ).onAppear(perform: {
                                 print(UserDefaults.standard.string(forKey: i.relativeString)!)

@@ -20,7 +20,7 @@ struct RecordView: View {
     @State var minute: Int = 0
     @State var second: Int = 0
     @State var isRecording: Bool = false
-    @State var urlString: String?
+    @State var urlString: String = ""
     var body: some View {
         ZStack {
             WaveForm(color: isRecording ? .red : .cyan, amplify: isRecording ? 75 : 50, isReversed: false)
@@ -120,8 +120,8 @@ struct RecordView: View {
                     Spacer()
                     
                     Button {
-                        UserDefaults.standard.set($recordFileName, forKey: urlString!)
-                        print(urlString!)
+                        UserDefaults.standard.set(recordFileName, forKey: urlString)
+                        print(urlString)
                     } label: {
                         HStack {
                             Image(systemName: "arrow.down.to.line.circle")
