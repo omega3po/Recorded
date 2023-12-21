@@ -11,7 +11,9 @@ import SwiftUI
 struct RecordedApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+            }
         }
     }
 }

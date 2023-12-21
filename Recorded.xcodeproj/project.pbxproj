@@ -11,6 +11,9 @@
 		E575EB572B031448004A8D89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E575EB562B031448004A8D89 /* ContentView.swift */; };
 		E575EB592B031449004A8D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E575EB582B031449004A8D89 /* Assets.xcassets */; };
 		E575EB5C2B031449004A8D89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E575EB5B2B031449004A8D89 /* Preview Assets.xcassets */; };
+		E575EB632B0314A5004A8D89 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E575EB622B0314A5004A8D89 /* RecordView.swift */; };
+		E575EB652B0314B1004A8D89 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E575EB642B0314B1004A8D89 /* ListView.swift */; };
+		E575EB672B0315B3004A8D89 /* WaveForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E575EB662B0315B3004A8D89 /* WaveForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		E575EB562B031448004A8D89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E575EB582B031449004A8D89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E575EB5B2B031449004A8D89 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E575EB622B0314A5004A8D89 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
+		E575EB642B0314B1004A8D89 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		E575EB662B0315B3004A8D89 /* WaveForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,9 @@
 				E575EB562B031448004A8D89 /* ContentView.swift */,
 				E575EB582B031449004A8D89 /* Assets.xcassets */,
 				E575EB5A2B031449004A8D89 /* Preview Content */,
+				E575EB622B0314A5004A8D89 /* RecordView.swift */,
+				E575EB642B0314B1004A8D89 /* ListView.swift */,
+				E575EB662B0315B3004A8D89 /* WaveForm.swift */,
 			);
 			path = Recorded;
 			sourceTree = "<group>";
@@ -137,7 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E575EB652B0314B1004A8D89 /* ListView.swift in Sources */,
 				E575EB572B031448004A8D89 /* ContentView.swift in Sources */,
+				E575EB672B0315B3004A8D89 /* WaveForm.swift in Sources */,
+				E575EB632B0314A5004A8D89 /* RecordView.swift in Sources */,
 				E575EB552B031448004A8D89 /* RecordedApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +287,7 @@
 				DEVELOPMENT_TEAM = VCD5YL67WX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Your mic is mine";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +317,7 @@
 				DEVELOPMENT_TEAM = VCD5YL67WX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Your mic is mine";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
